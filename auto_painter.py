@@ -1,3 +1,12 @@
+#  -------------------
+# |Wplace Auto Painter|
+# |made by Ivasko009  |
+#  -------------------
+# 
+# Make any changes you want, it's hella fast, so if it's crashing or lagging your computer, slow it down.
+# If you're reading this, you probably want to do some changes, so I left some notes on what does what.
+
+
 import pyautogui
 import cv2
 import numpy as np
@@ -10,17 +19,17 @@ TL_X, TL_Y = 109, 187
 BR_X, BR_Y = 950, 792
 REGION = (TL_X, TL_Y, BR_X - TL_X, BR_Y - TL_Y)
 
-pyautogui.PAUSE = 0       # Remove the ~0.1s global pause between every pyautogui call
-pyautogui.FAILSAFE = False  # Optional: disable failsafe corner check overhead
+pyautogui.PAUSE = 0                  # Remove the ~0.1s global pause between every pyautogui call
+pyautogui.FAILSAFE = False           # Optional: disable failsafe corner check overhead
 
-TOLERANCE = 5
-PICK_DELAY = 0
-PAINT_DELAY = 0
-RUN_SECONDS = 1.0
-HOTKEY = keyboard.Key.alt_gr
+TOLERANCE = 5                        # Color tolerance. Higher values result in inaccurate clicks.
+PICK_DELAY = 0                       # Edit this value to add a delay between picking different colors
+PAINT_DELAY = 0                      # Edit this value to add a delay between clicking pixels on the canvas
+RUN_SECONDS = 0.3                    # Don't delete this or make this longer, otherwise it will go through the cycle multiple times
+HOTKEY = keyboard.Key.alt_gr         # Change this if you don't like the key to activate the script
 
-PALETTE = {
-    (0, 0, 0): (37, 882),
+PALETTE = {                          # Whole Wplace color palette and their corresponding coordinates on the screen.
+    (0, 0, 0): (37, 882),            # Change the coords if you have a different resolution than 1920*1080.
     (60, 60, 60): (98, 882),
     (120, 120, 120): (159, 884),
     (170, 170, 170): (218, 881),
@@ -87,6 +96,8 @@ PALETTE = {
 
 running = True
 active = False
+
+# I don't recommend changing anything past this point, it's just code for taking the screenshot, analyzing colors and telling your cursor where to click.
 
 def color_mask(img_bgr, rgb, tol):
     bgr = (rgb[2], rgb[1], rgb[0])
