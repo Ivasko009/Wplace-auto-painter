@@ -26,8 +26,8 @@ Alternatively just copy the python code and paste it into PyCharm or whatever ap
    ```
    npm start
    ```
-2. Follow the on-screen instructions to set up your painting preferences.
-3. Use the toolbar to select different painting tools and options.
+2. Line up the red box with the space you want to paint.
+3. Press "Alt Gr" (or right Alt) to start painting.
 
 ## Requirements
 - Node.js v14 or higher
