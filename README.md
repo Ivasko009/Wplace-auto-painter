@@ -1,7 +1,7 @@
 # Wplace Auto Painter
 
 ## Project Description
-Wplace Auto Painter is a tool designed to automate the painting process in Wplace applications. It streamlines workflows and enhances productivity by providing a seamless integration with various painting functionalities.
+Wplace Auto Painter is a tool designed to automate the painting process in Wplace applications. Also it's fast. Like... Extremely fast.
 
 ## Installation Instructions
 1. Clone the repository:
@@ -28,8 +28,9 @@ Wplace Auto Painter is a tool designed to automate the painting process in Wplac
 ## Requirements
 - Node.js v14 or higher
 - NPM v6 or higher
-- Wplace application installed and configured
+- Blue Marble web browser extention installed
 
 ## Notes
 - Ensure that you have all the necessary permissions to run the application.
+- Ensure that you have the correct amount of pixels ready to be used.
 - For troubleshooting, refer to the documentation provided within the repository.
