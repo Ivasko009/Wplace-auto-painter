@@ -1,7 +1,7 @@
 # Wplace Auto Painter
 
 ## Project Description
-Wplace Auto Painter is a tool designed to automate the painting process in Wplace applications. Also it's fast. Like... Extremely fast.
+Wplace Auto Painter is a tool designed to automate the painting process in Wplace applications. This script works entirely on the client side and does not require you to put in your token or log in. Also it's fast. Like... Extremely fast.
 
 ## Installation Instructions
 1. Clone the repository:
