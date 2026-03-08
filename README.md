@@ -17,6 +17,8 @@ Wplace Auto Painter is a tool designed to automate the painting process in Wplac
    npm install
    ```
 
+Alternatively just copy the python code and paste it into PyCharm or whatever app you're using.
+
 ## Usage Tutorial
 1. Start the application:
    ```
