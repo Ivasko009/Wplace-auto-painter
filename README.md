@@ -32,7 +32,7 @@ Alternatively just copy the python code and paste it into PyCharm or whatever ap
 ## Requirements
 - Node.js v14 or higher
 - NPM v6 or higher
-- Blue Marble web browser extention installed
+- Blue Marble or inbuilt Wplace overlay
 
 ## Notes
 - Ensure that you have all the necessary permissions to run the application.
